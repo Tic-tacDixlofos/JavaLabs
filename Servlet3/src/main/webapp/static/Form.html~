@@ -1,0 +1,39 @@
+ <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>JSP Actions Example</title>
+</head>
+<body>
+
+<h1> Student Registration Page</h1>
+<form action="<%= request.getContextPath() %>/my-app" method="post">
+
+
+    ID: <input type="text" name="firstName">
+    <br> <br>
+
+    First Name: <input type="text" name="firstName">
+    <br> <br>
+
+    Last Name: <input type="text" name="lastName">
+    <br> <br>
+
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> 4Cheese</label><br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2"> Diablo </label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3"> Margarita </label><br>
+    <input type="checkbox" id="vehicle4" name="vehicle4" value="Boat">
+    <label for="vehicle3"> Peperoni </label><br><br>
+
+
+
+    <br>
+    <input type="submit" value="register">
+</form>
+</body>
+</html>
